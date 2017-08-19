@@ -20,7 +20,7 @@ function gamePlay(){
 	if(userTotalScore === computerChoice){
 		winCount++;
 		$('#win-counter').text(winCount);
-		$('#win-or-lose').text('You win!');
+		$('#win-or-lose').text('Way to go! You win!');
 		computerChoice = Math.floor(Math.random()*(120 - 19 + 1) + 19);
 		$('#random-number').text(computerChoice);
 		userTotalScore = 0;
@@ -29,7 +29,7 @@ function gamePlay(){
 	} else if(userTotalScore > computerChoice){
 		loseCount++;
 		$('#loss-counter').html(loseCount);
-		$('#win-or-lose').text('You lose!');
+		$('#win-or-lose').text("It's a shame! You lost!");
 		computerChoice = Math.floor(Math.random()*(120 - 19 + 1) + 19);
 		$('#random-number').text(computerChoice);
 		userTotalScore = 0;
