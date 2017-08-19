@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crystals Collector Game</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display|Source+Code+Pro" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>African Crystals Collector!</h1>
+		</header>
+
+		<section>
+		<ul>
+			<li>You have been given a <b>Special Number</b> at the start of the game. Hidden behind each gem is a number(shown as points). Add all these numbers to total that Special Number given.</li>
+			<br/>
+			<li>Clicking on a crystal will add a specific amount of points to your total score. You will have to figure out how many points was added.</li>
+			<br/>
+			<li>Memorize the points behind each gem as this is needed to add up your total score to the given random number. You will lose the game if your total score goes above the random number.</li>
+			<br/>
+			<li>Don't be a genius!!! Each time the game starts all numbers are generated at random</li>
+		</ul>
+		</section>
+
+		<div id="randomnumber-and-scoreboard">
+			<div id="random-number-generator">
+				<span id="random-number"></span>
+			</div>
+
+			<div id="score-board">
+				<span id="win-or-lose"></span>
+				<p>Wins: <span id="win-counter">0</span></p>
+				<p>Losses: <span id="loss-counter">0</span></p>
+			</div>
+		</div>
+
+		<div id="crystals">
+			<img id="bead1" src="assets/images/bead1.jpg" alt="African bead">
+			<img id="bead2" src="assets/images/bead2.jpg" alt="African bead">
+			<img id="bead3" src="assets/images/bead3.jpg" alt="African bead">
+			<img id="bead4" src="assets/images/bead4.jpg" alt="African bead">
+		</div>
+
+		<div id="current-score">
+			<h1>Your total score is:</h1>
+			<span id="current-score-counter"></span>
+		</div>
+	</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
